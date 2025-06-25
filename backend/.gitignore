@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Credentials and secrets
+client_secret.json
+gcp-creds.json
+token.json
+
+# OS/System
+Thumbs.db
+.idea/
+*.swp
+
+# Coverage/test
+htmlcov/
+.tox/
+coverage.*
+.pytest_cache/
+nosetests.xml
+.testmondata
+.cache/
