@@ -6,8 +6,9 @@ import {
   ServerStackIcon,
   RectangleStackIcon,
 } from "@heroicons/react/24/solid";
-import { Home, Profile, Tables, Notifications } from "@/pages/dashboard";
+import { Home, Profile, Tables, Notifications, Jobtracking } from "@/pages/dashboard";
 import { SignIn, SignUp } from "@/pages/auth";
+import { element } from "prop-types";
 
 const icon = {
   className: "w-5 h-5 text-inherit",
@@ -22,6 +23,12 @@ export const routes = [
         name: "dashboard",
         path: "/home",
         element: <Home />,
+      },
+      {
+        icon:<HomeIcon {...icon} />,
+        name:"Job Tracking",
+        path:"/job-tracking",
+        element:<Jobtracking/>,
       },
       {
         icon: <UserCircleIcon {...icon} />,
